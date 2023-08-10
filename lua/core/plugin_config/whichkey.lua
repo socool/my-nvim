@@ -3,6 +3,12 @@ local conf = {
   window = {
 	  border = "single",
 	  position = "bottom"
+  },
+  triggers = {"<leader>"},
+  triggers_nowait = {
+    -- marks
+    "~",
+    "`"
   }
 }
 
