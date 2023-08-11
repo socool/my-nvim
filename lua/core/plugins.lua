@@ -68,6 +68,67 @@ local plugins = {
 			config = true,
 		},
 	},
+	-- Git related plugins
+	"tpope/vim-fugitive",
+	"tpope/vim-rhubarb",
+	"lewis6991/gitsigns.nvim",
+	"f-person/git-blame.nvim",
+	"ruifm/gitlinker.nvim",
+	{
+		"sindrets/diffview.nvim",
+		config = function()
+			require("diffview").setup({
+				win_config = { -- See ':h diffview-config-win_config'
+					position = "left",
+					width = 40,
+					win_opts = {},
+				},
+			})
+		end,
+	},
+	"wintermute-cell/gitignore.nvim",
+
+	-- Fuzzy Finder (files, lsp, etc)
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			{
+				"nvim-telescope/telescope-fzf-native.nvim",
+				cond = vim.fn.executable("make") == 1,
+			},
+			{
+				"nvim-telescope/telescope-file-browser.nvim",
+				dependencies = {
+					"nvim-telescope/telescope.nvim",
+					"nvim-lua/plenary.nvim",
+				},
+			},
+			"nvim-telescope/telescope-project.nvim",
+			"cljoly/telescope-repo.nvim",
+			{ "nvim-telescope/telescope-live-grep-args.nvim" },
+			config = function()
+				require("telescope").load_extension("live_grep_args")
+			end,
+			{
+				"ahmedkhalf/project.nvim",
+				config = function()
+					require("project_nvim").setup({})
+				end,
+			},
+			{
+				"nvim-telescope/telescope-symbols.nvim",
+				dependencies = { "nvim-telescope/telescope-file-browser.nvim" },
+			},
+		},
+	},
+	{
+		"nvim-telescope/telescope-frecency.nvim",
+		config = function()
+			require("telescope").load_extension("frecency")
+		end,
+		dependencies = { "kkharji/sqlite.lua" },
+	},
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
