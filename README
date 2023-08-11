@@ -66,3 +66,22 @@ brew install --cask font-tinos-nerd-font
 brew install --cask font-ubuntu-nerd-font
 brew install --cask font-victor-mono-nerd-font
 ```
+
+### Step 3 - Setup font
+- Restart your macosx
+- Select font "Edit Session" > "Text" > "Font"
+
+## Link
+- https://alpha2phi.medium.com/
+Medium store all thing about nvm
+- https://github.com/folke/which-key.nvim
+Nvim plugin display popup with key bidngs
+- https://github.com/nvim-neo-tree/neo-tree.nvim
+Nvim plugin for tree browse file system
+- https://github.com/Chalermpun/IDE
+Example personal IDE
+- https://www.nerdfonts.com/
+Iconic font aggregator, collection, patcher
+
+## How to 
+- Format file <space>+fm

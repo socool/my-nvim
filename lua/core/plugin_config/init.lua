@@ -1,2 +1,5 @@
 require("core.plugin_config.whichkey")
 require("core.plugin_config.neotree")
+require("core.plugin_config.lsp_config")
+require("core.plugin_config.completion")
+require("core.plugin_config.null_ls")
