@@ -129,6 +129,14 @@ local plugins = {
 		end,
 		dependencies = { "kkharji/sqlite.lua" },
 	},
+	{ -- Directory Management
+		{
+			"stevearc/oil.nvim",
+			opts = {},
+			dependencies = { "nvim-tree/nvim-web-devicons" },
+		},
+
+	},
 }
 local opts = {}
 require("lazy").setup(plugins, opts)

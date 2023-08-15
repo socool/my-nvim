@@ -16,3 +16,12 @@ vim.keymap.set("n", "<leader>dds", vim.diagnostic.show)
 
 vim.keymap.set("n", "<leader>w", ":wa<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>q", ":qa!<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+	pattern = { "oil://*" },
+	callback = function()
+		vim.keymap.set("n", "q", "<cmd>lua require('oil').close()<cr>", { buffer = 0 })
+	end,
+})
