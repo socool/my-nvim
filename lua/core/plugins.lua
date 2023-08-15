@@ -135,7 +135,27 @@ local plugins = {
 			opts = {},
 			dependencies = { "nvim-tree/nvim-web-devicons" },
 		},
-
+	},
+	-- Git related plugins
+	{
+		"tpope/vim-fugitive",
+		"tpope/vim-rhubarb",
+		"lewis6991/gitsigns.nvim",
+		"f-person/git-blame.nvim",
+		"ruifm/gitlinker.nvim",
+		"wintermute-cell/gitignore.nvim",
+		{
+			"sindrets/diffview.nvim",
+			config = function()
+				require("diffview").setup({
+					win_config = { -- See ':h diffview-config-win_config'
+						position = "left",
+						width = 40,
+						win_opts = {},
+					},
+				})
+			end,
+		},
 	},
 }
 local opts = {}
