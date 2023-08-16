@@ -16,6 +16,9 @@ local plugins = {
 	"MunifTanjim/nui.nvim",
 	"nvim-lua/plenary.nvim",
 	"jose-elias-alvarez/null-ls.nvim",
+	"freddiehaddad/feline.nvim",
+        "AckslD/swenv.nvim",
+	---------------- Detailed Config ----------------------
 	{
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v3.x",
