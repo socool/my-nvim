@@ -85,3 +85,23 @@ Iconic font aggregator, collection, patcher
 
 ## How to 
 - Format file <space>+fm
+
+## Hot Key
+### Move cursor
+- 0: goto start line
+- $: goto end of line
+- w: move next word
+- b: back next word
+- {: move to next paragraph
+- }: back to previous paragraph
+
+### Move screen
+- Ctrl+F: move forwards full scrren
+- Ctrl+B: move backwards full screen
+- Ctrl+D: move down half screen
+- Ctrl+U: move up half screen
+- Ctrl+E: scroll down
+- Ctrl+Y: scroll up
+- zz: center cursor line
+- zt: put cursor line at top
+- zb: put curosor line at bottom 
