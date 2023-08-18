@@ -106,6 +106,11 @@ Iconic font aggregator, collection, patcher
 - zt: put cursor line at top
 - zb: put curosor line at bottom 
 
+### Git
+- Space+g+t: show git window
+- c+c: commit all change
+- g+Space+Push: push chaneg
+
 ### Tips
 - g+.: show hidden file
 - Space+x+s: show system info
