@@ -1,4 +1,3 @@
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local null_ls = require("null-ls")
 local nls_utils = require("null-ls.utils")
 local with_diagnostics_code = function(builtin)

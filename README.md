@@ -105,3 +105,8 @@ Iconic font aggregator, collection, patcher
 - zz: center cursor line
 - zt: put cursor line at top
 - zb: put curosor line at bottom 
+
+### Tips
+- g+.: show hidden file
+- Space+x+s: show system info
+- Ctrl+\: terminal
