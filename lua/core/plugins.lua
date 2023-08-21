@@ -17,7 +17,7 @@ local plugins = {
 	"nvim-lua/plenary.nvim",
 	"jose-elias-alvarez/null-ls.nvim",
 	"freddiehaddad/feline.nvim",
-        "AckslD/swenv.nvim",
+	"AckslD/swenv.nvim",
 	---------------- Detailed Config ----------------------
 	{
 		"nvim-neo-tree/neo-tree.nvim",
@@ -158,6 +158,40 @@ local plugins = {
 					},
 				})
 			end,
+		},
+	},
+	{ -- Terminal Plugin
+
+		{
+			"kiyoon/jupynium.nvim",
+			build = "pip3 install --user .",
+		},
+		{
+			"akinsho/toggleterm.nvim",
+			keys = { [[<C-\>]] },
+			cmd = { "ToggleTerm", "TermExec" },
+			module = { "toggleterm", "toggleterm.terminal" },
+			config = function()
+				require("core.plugin_config.Terminal.toggleterm").setup()
+			end,
+		},
+
+		{
+			"jpalardy/vim-slime",
+			config = function()
+				vim.g.slime_target = "tmux"
+				vim.g.slime_default_config = {
+					socket_name = "default",
+					target_pane = "{last}",
+				}
+			end,
+		},
+
+		{
+			"ThePrimeagen/harpoon",
+			dependencies = {
+				"nvim-lua/plenary.nvim",
+			},
 		},
 	},
 }

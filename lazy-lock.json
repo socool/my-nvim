@@ -14,6 +14,8 @@
   "gitignore.nvim": { "branch": "master", "commit": "a181cd57922bce89db0b63bd9455a0d19f6b2c41" },
   "gitlinker.nvim": { "branch": "master", "commit": "cc59f732f3d043b626c8702cb725c82e54d35c25" },
   "gitsigns.nvim": { "branch": "main", "commit": "bae45ef449d8811061cc940459e70e883a3aa83a" },
+  "harpoon": { "branch": "master", "commit": "21f4c47c6803d64ddb934a5b314dcb1b8e7365dc" },
+  "jupynium.nvim": { "branch": "master", "commit": "c6ac04e982bb05eb5eaa9f9f60148491349dda57" },
   "lazy.nvim": { "branch": "main", "commit": "3ad55ae678876516156cca2f361c51f7952a924b" },
   "lsp-zero.nvim": { "branch": "v2.x", "commit": "96974fe970c37bd3879ad8b6be4fe7ddfad75680" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "e86a4c84ff35240639643ffed56ee1c4d55f538e" },
@@ -40,8 +42,10 @@
   "telescope-repo.nvim": { "branch": "master", "commit": "d069994f0571366ca2a80f0fb464bb80fd63569d" },
   "telescope-symbols.nvim": { "branch": "master", "commit": "f2060117d965df4a626f068a4ebbd8ee051aa076" },
   "telescope.nvim": { "branch": "master", "commit": "2d92125620417fbea82ec30303823e3cd69e90e8" },
+  "toggleterm.nvim": { "branch": "main", "commit": "12cba0a1967b4f3f31903484dec72a6100dcf515" },
   "vim-fugitive": { "branch": "master", "commit": "b3b838d690f315a503ec4af8c634bdff3b200aaf" },
   "vim-illuminate": { "branch": "master", "commit": "5ed17582a8e97bf0a0c617c3cf762e98f87b9859" },
   "vim-rhubarb": { "branch": "master", "commit": "ee69335de176d9325267b0fd2597a22901d927b1" },
+  "vim-slime": { "branch": "main", "commit": "c1f6a5bdd86f2beceaaf694e34a2587aca76319a" },
   "which-key.nvim": { "branch": "main", "commit": "7ccf476ebe0445a741b64e36c78a682c1c6118b7" }
 }
