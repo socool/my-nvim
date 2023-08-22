@@ -130,5 +130,10 @@ brew install --cask font-victor-mono-nerd-font
 ### Navigate & Find
 
 - t: find word in current cursor
-- f: find character in current current
+- f: find character in current
 - Ctrl+P: telescope file browser
+- Space+f+g: live grep
+
+### Theme
+
+- :Telescope colorschema: change theme
