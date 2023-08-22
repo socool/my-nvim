@@ -27,8 +27,9 @@ local opts = {
 }
 
 local mappings = {
-
-g = {
+	-- ใช้งานโดย พิมพ์ <leader> + g + <Command>
+	-- เช่น space + g + t => 'ดู git_status'
+	g = {
 		Y = { "<cmd>lua require('gitlinker').get_repo_url()<cr>", "Gitlinker Get Repo URL" },
 		y = {
 			"<cmd>lua require('gitlinker').get_buf_range_url('v', {action_callback = require('gitlinker.actions').copy_to_clipboard, print_url = true})<cr>",
@@ -49,14 +50,14 @@ g = {
 		D = { "<cmd>DiffviewClose<cr>", "DiffviewClose" },
 		t = { "<cmd>GitToggle<cr>", "Git Status" },
 	},
-		o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
-		b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-		c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
-		d = {
-			"<cmd>Gitsigns diffthis HEAD<cr>",
-			"Diff",
-		},
-	}
+	o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
+	b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+	c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
+	d = {
+		"<cmd>Gitsigns diffthis HEAD<cr>",
+		"Diff",
+	},
+}
 
 whichkey.setup(conf)
 whichkey.register(mappings, opts)

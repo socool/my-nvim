@@ -127,7 +127,8 @@ brew install --cask font-victor-mono-nerd-font
 - Space+x+s: show system info
 - Ctrl+\: terminal
 
-### Hops
+### Navigate & Find
 
 - t: find word in current cursor
 - f: find character in current current
+- Ctrl+P: telescope file browser
