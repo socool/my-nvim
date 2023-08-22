@@ -1,12 +1,15 @@
 # Step to install plugin
 
-## Create plugin file (*.lua)
+## Create plugin file (\*.lua)
+
 ```
 vim.keymap.set("n","<C-n>",":Neotree toggle<CR>",{noremap = true, silent = true})
 ```
+
 ## Install nerd font
 
 ### Step 1 - Add Cask-Fonts Formulae
+
 ```
 brew tap homebrew/cask-fonts
 ```
@@ -68,26 +71,31 @@ brew install --cask font-victor-mono-nerd-font
 ```
 
 ### Step 3 - Setup font
+
 - Restart your macosx
 - Select font "Edit Session" > "Text" > "Font"
 
 ## Link
-- https://alpha2phi.medium.com/
-Medium store all thing about nvm
-- https://github.com/folke/which-key.nvim
-Nvim plugin display popup with key bidngs
-- https://github.com/nvim-neo-tree/neo-tree.nvim
-Nvim plugin for tree browse file system
-- https://github.com/Chalermpun/IDE
-Example personal IDE
-- https://www.nerdfonts.com/
-Iconic font aggregator, collection, patcher
 
-## How to 
+- https://alpha2phi.medium.com/
+  Medium store all thing about nvm
+- https://github.com/folke/which-key.nvim
+  Nvim plugin display popup with key bidngs
+- https://github.com/nvim-neo-tree/neo-tree.nvim
+  Nvim plugin for tree browse file system
+- https://github.com/Chalermpun/IDE
+  Example personal IDE
+- https://www.nerdfonts.com/
+  Iconic font aggregator, collection, patcher
+
+## How to
+
 - Format file <space>+fm
 
 ## Hot Key
+
 ### Move cursor
+
 - 0: goto start line
 - $: goto end of line
 - w: move next word
@@ -96,6 +104,7 @@ Iconic font aggregator, collection, patcher
 - }: back to previous paragraph
 
 ### Move screen
+
 - Ctrl+F: move forwards full scrren
 - Ctrl+B: move backwards full screen
 - Ctrl+D: move down half screen
@@ -104,14 +113,21 @@ Iconic font aggregator, collection, patcher
 - Ctrl+Y: scroll up
 - zz: center cursor line
 - zt: put cursor line at top
-- zb: put curosor line at bottom 
+- zb: put curosor line at bottom
 
 ### Git
+
 - Space+g+t: show git window
 - c+c: commit all change
 - g+Space+Push: push chaneg
 
 ### Tips
+
 - g+.: show hidden file
 - Space+x+s: show system info
 - Ctrl+\: terminal
+
+### Hops
+
+- t: find word in current cursor
+- f: find character in current current

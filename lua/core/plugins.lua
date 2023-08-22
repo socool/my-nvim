@@ -194,6 +194,87 @@ local plugins = {
 			},
 		},
 	},
+	-- Navigate
+	{
+		"phaazon/hop.nvim",
+		dependencies = {
+			"ziontee113/syntax-tree-surfer",
+			"mfussenegger/nvim-treehopper",
+		},
+		config = function()
+			-- you can configure Hop the way you like here; see :h hop-config
+			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+		end,
+	},
+	{ -- Highlight, edit, and navigate code
+		"nvim-treesitter/nvim-treesitter",
+		"nvim-treesitter/nvim-treesitter-textobjects",
+		"nvim-treesitter/playground",
+		{
+			"RRethy/nvim-treesitter-endwise",
+			event = "InsertEnter",
+		},
+		{
+			"m-demare/hlargs.nvim",
+			config = function()
+				require("hlargs").setup()
+			end,
+		},
+	},
+	{ -- Fuzzy Finder (files, lsp, etc)
+		"nvim-telescope/telescope.nvim",
+		"nvim-telescope/telescope-project.nvim",
+		"nvim-telescope/telescope-media-files.nvim",
+		"cljoly/telescope-repo.nvim",
+		"stevearc/aerial.nvim",
+		"gbprod/yanky.nvim",
+		"kevinhwang91/nvim-bqf",
+		"chrisbra/unicode.vim",
+		{
+			"folke/trouble.nvim",
+			dependencies = { "nvim-tree/nvim-web-devicons" },
+		},
+		{
+			"nvim-telescope/telescope-symbols.nvim",
+			dependencies = { "nvim-telescope/telescope-file-browser.nvim" },
+		},
+	},
+	{
+		"ahmedkhalf/project.nvim",
+		config = function()
+			require("project_nvim").setup({})
+		end,
+	},
+	{
+		"nvim-telescope/telescope-file-browser.nvim",
+		dependencies = {
+			"nvim-telescope/telescope.nvim",
+			"nvim-lua/plenary.nvim",
+		},
+	},
+	{
+		"nvim-telescope/telescope-frecency.nvim",
+		config = function()
+			require("telescope").load_extension("frecency")
+		end,
+		dependencies = { "kkharji/sqlite.lua" },
+	},
+	{
+		"nvim-telescope/telescope-fzf-native.nvim",
+		cond = vim.fn.executable("make") == 1,
+	},
+	{
+		"nvim-telescope/telescope-live-grep-args.nvim",
+		config = function()
+			require("telescope").load_extension("live_grep_args")
+		end,
+	},
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+	},
+	config = function()
+		require("telescope").setup()
+	end,
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
