@@ -133,6 +133,7 @@ brew install --cask font-victor-mono-nerd-font
 - f: find character in current
 - Ctrl+P: telescope file browser
 - Space+f+g: live grep
+- :%s/^M//g: remove ^M entered by holding down Ctrl and typing v followerd by m,and release Ctrl
 
 ### Theme
 

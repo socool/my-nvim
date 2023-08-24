@@ -275,6 +275,62 @@ local plugins = {
 	config = function()
 		require("telescope").setup()
 	end,
+	{ -- BCE
+		"karb94/neoscroll.nvim",
+		"lukas-reineke/indent-blankline.nvim",
+		"nyngwang/NeoZoom.lua",
+		"AckslD/swenv.nvim",
+		"vim-scripts/Tabmerge",
+
+		{
+			"windwp/nvim-spectre",
+			config = function()
+				require("spectre").setup()
+			end,
+		},
+		{
+			"akinsho/bufferline.nvim",
+			dependencies = { "nvim-tree/nvim-web-devicons", "famiu/bufdelete.nvim" },
+			config = function()
+				require("bufferline").setup()
+			end,
+		},
+		{
+			"gelguy/wilder.nvim",
+			build = ":UpdateRemotePlugins",
+			dependencies = {
+				"roxma/nvim-yarp",
+				"roxma/vim-hug-neovim-rpc",
+				"nixprime/cpsm",
+				"romgrk/fzy-lua-native",
+				"sharkdp/fd",
+			},
+		},
+		{
+			"echasnovski/mini.map",
+			branch = "stable",
+			event = "BufWinEnter",
+			dependencies = { "dstein64/nvim-scrollview", enabled = false },
+		},
+
+		{
+			"anuvyklack/windows.nvim",
+			dependencies = {
+				"anuvyklack/middleclass",
+				"anuvyklack/animation.nvim",
+			},
+		},
+		{
+			"gen740/SmoothCursor.nvim",
+			config = function()
+				require("smoothcursor").setup()
+			end,
+		},
+		{
+			"kevinhwang91/nvim-ufo",
+			dependencies = { "kevinhwang91/promise-async" },
+		},
+	},
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
