@@ -50,6 +50,12 @@ local mappings = {
 		D = { "<cmd>DiffviewClose<cr>", "DiffviewClose" },
 		t = { "<cmd>GitToggle<cr>", "Git Status" },
 	},
+	m = {
+		name = "Minimap",
+		o = { "<cmd>lua require('mini.map').open()<cr>", "Minimap Open" },
+		c = { "<cmd>lua require('mini.map').close()<cr>", "Minimap Close" },
+		f = { "<cmd>lua require('mini.map').toggle_focus()<cr>", "Minimap Focus" },
+	},
 	o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
 	b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
 	c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },

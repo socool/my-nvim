@@ -331,6 +331,7 @@ local plugins = {
 			dependencies = { "kevinhwang91/promise-async" },
 		},
 	},
+	"catppuccin/nvim",
 }
 local opts = {}
 require("lazy").setup(plugins, opts)

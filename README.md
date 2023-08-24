@@ -1,5 +1,7 @@
 # Step to install plugin
 
+mc
+
 ## Create plugin file (\*.lua)
 
 ```
