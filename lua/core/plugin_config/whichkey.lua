@@ -26,9 +26,15 @@ local opts = {
 	nowait = false,
 }
 
+vim.api.nvim_set_keymap("n", "<S-h>", ":BufferLineCyclePrev<CR>", { noremap = true, desc = "BufferLineCyclePrev" })
+vim.api.nvim_set_keymap("n", "<S-l>", ":BufferLineCycleNext<CR>", { noremap = true, desc = "BufferLineCycleNext" })
+vim.api.nvim_set_keymap("n", "<S-c>", ":BufferLinePickClose<CR>", { noremap = true, desc = "BufferLinePickCose" })
+
 local mappings = {
 	-- ใช้งานโดย พิมพ์ <leader> + g + <Command>
 	-- เช่น space + g + t => 'ดู git_status'
+	["<Tab>"] = { "<cmd>BufferLineMoveNext<cr>", "BufferLineMoveNext" },
+	["<S-Tab>"] = { "<cmd>BufferLineMovePrev<cr>", "BufferLineMovePrev" },
 	g = {
 		Y = { "<cmd>lua require('gitlinker').get_repo_url()<cr>", "Gitlinker Get Repo URL" },
 		y = {

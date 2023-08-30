@@ -332,6 +332,23 @@ local plugins = {
 		},
 	},
 	"catppuccin/nvim",
+	{ "dbinagi/nomodoro", config = true },
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+			opt = true,
+			config = function()
+				require("lualine").setup({
+					sections = {
+						lualine_x = {
+							require("nomodoro").status,
+						},
+					},
+				})
+			end,
+		},
+	},
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
