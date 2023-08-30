@@ -1,6 +1,6 @@
 -- Navigate vim panes better
 -- Set <space> as the leader key
-vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
+
 vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
@@ -18,6 +18,11 @@ vim.keymap.set("n", "<leader>w", ":wa<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>q", ":qa!<CR>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
+
+-- nomodoro keymap
+vim.keymap.set("n", "<leader>nw", "<cmd>NomoWork<cr>")
+vim.keymap.set("n", "<leader>nb", "<cmd>NomoBreak<cr>")
+vim.keymap.set("n", "<leader>ns", "<cmd>NomoStop<cr>")
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 	pattern = { "oil://*" },
