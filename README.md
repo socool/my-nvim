@@ -140,3 +140,10 @@ brew install --cask font-victor-mono-nerd-font
 ### Theme
 
 - :Telescope colorschema: change theme
+
+### ChatGPT
+
+- Shift+V+): select code snippet
+- y+Space+C+e: show code snippet for ChatGPT
+- Ctr+d: show difference
+-
