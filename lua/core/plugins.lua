@@ -290,7 +290,7 @@ local plugins = {
 		},
 		{
 			"akinsho/bufferline.nvim",
-			dependencies = { "nvim-tree/nvim-web-devicons", "famiu/bufdelete.nvim" },
+			dependencies = { "nvim-tree/nvim-web-devicons", "famiu/bufdelete.nvim", "famiu/bufdelete.nvim" },
 			config = function()
 				require("bufferline").setup()
 			end,
@@ -347,6 +347,20 @@ local plugins = {
 					},
 				})
 			end,
+		},
+	},
+	{ -- AI
+		{
+			"Exafunction/codeium.vim",
+			event = "InsertEnter",
+		},
+		{
+			"jackMort/ChatGPT.nvim",
+			dependencies = {
+				"MunifTanjim/nui.nvim",
+				"nvim-lua/plenary.nvim",
+				"nvim-telescope/telescope.nvim",
+			},
 		},
 	},
 }
