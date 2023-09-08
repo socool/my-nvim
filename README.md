@@ -1,7 +1,5 @@
 # Step to install plugin
 
-mc
-
 ## Create plugin file (\*.lua)
 
 ```
@@ -94,16 +92,55 @@ brew install --cask font-victor-mono-nerd-font
 
 - Format file <space>+fm
 
+## Special Keys
+
+<cmd> - is : which starts a cmd
+<cr> - is enter
+<Esc> - is Escape
+<C-x> - is Ctrl+x
+<M-x> - is alt+x
+<M-X> - is alt+shift+x
+<A-x> - is alt+x
+<A-X> - is alt+shift+x
+<leader> - is the leader key
+
 ## Hot Key
 
-### Move cursor
+### Basic binds
 
-- 0: goto start line
-- $: goto end of line
-- w: move next word
-- b: back next word
-- {: move to next paragraph
-- }: back to previous paragraph
+- i: enter Insert mode
+- a: enter insert mode After the cursor
+- I: enter Insert mode at the beginning of the line
+- A: enter insert mode at the end of the line (same as a but for the entire line)
+- o: insert new line below
+- O: insert new line above
+- u: Undo, check out undotree
+- Ctrl+r: Redo
+- zz: Recenter the screen, there are more binds for screen actions but this is the most important one
+
+### Arrows
+
+- h: left
+- j: down
+- k: up
+- l: right
+
+### Words
+
+- w: jump Word forward
+- b: jump word Backwards
+- e: jump forward to the End of the word
+- ge: jump to the End of the previous word
+
+### Generics
+
+- 0: go to the beginning of the line
+- $: go to the end of the line
+- <C-u>: go Up half a page
+- <C-d>: go Down half a page
+- %: jump to the pair of the bracket/quote/ifdef your cursor on
+- <C-o>: jump to the previous position you jumped from (you can do it multiple times)
+- <C-i>: jump to the next position you jumped to (you can do it multiple times)
 
 ### Move screen
 
