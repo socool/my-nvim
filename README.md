@@ -183,4 +183,14 @@ brew install --cask font-victor-mono-nerd-font
 - Shift+V+): select code snippet
 - y+Space+C+e: show code snippet for ChatGPT
 - Ctr+d: show difference
--
+
+### Coding
+
+#### numToStr/Comment.nvim
+
+##### Visual Mode
+
+- g+c+c: toggles the current line using linewise comment
+- g+b+c: toggles the current line using blockwise comment
+- [COUNT]+g+c+c: toggles the number of line given as a prefix-count using linewise
+- [COUNT]+g+b+c: toggles the number of line given as a prefix-count using blockise

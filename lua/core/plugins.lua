@@ -363,6 +363,31 @@ local plugins = {
 			},
 		},
 	},
+	{ -- Coding
+		{
+			"numToStr/Comment.nvim",
+			config = function()
+				require("Comment").setup()
+			end,
+		},
+	},
+	{ -- Interface
+		{
+			"goolord/alpha-nvim",
+			event = "VimEnter",
+			dependencies = { "nvim-tree/nvim-web-devicons" },
+		},
+		{
+			"petertriho/nvim-scrollbar",
+			dependencies = {
+				"kevinhwang91/nvim-hlslens",
+				"folke/tokyonight.nvim",
+				lazy = false,
+				priority = 1000,
+				opts = {},
+			},
+		},
+	},
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
